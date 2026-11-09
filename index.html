@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="803f33">
+
+        <title>筑境·索菲亚</title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="shell">
+            <header>
+                <a href="#home" class="brand">
+                    ♜
+                    <span>
+                        筑境·索菲亚
+                        <small>SOFIA · A CLOSER LOOK</small>
+                    </span>
+                </a>
+
+                <button
+                id="menu"
+                aria-label="打开导航"
+                aria-expanded="false"
+                >
+                ☰
+            </button>
+            </header>
+
+            <nav id="navigation" hidden></nav>
+
+            <main id="app"></main>
+
+            <div id="sheet" class="overlay" hidden>
+                <section
+                role="dialog"
+                aria-modal="true"
+                aria-labelledby="sheet-title"
+                >
+                <button id="close" aria-label="关闭">×</button>
+
+                <span class="eyebrow">ARCHITECTURAL DETAIL</span>
+
+                <h2 id="sheet-title"></h2>
+
+                <p id="sheet-text"></p>
+
+                <small>概念介绍 · 详细资料与来源待补充</small>
+            </section>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
